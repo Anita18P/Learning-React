@@ -1,6 +1,6 @@
 import ExpenseItem from "./components/Expenses/ExpenseItem";
-import Expenses from "./components/Expenses/Expenses.js";
-import ExpenseForm from "./components/NewExpense/ExpenseForm.js"
+import Expenses from "./components/Expenses/Expenses";
+import ExpenseForm from "./components/NewExpense/ExpenseForm"
 function App() {
   const expenses = [
     { id: "1", date: new Date(2023, 7, 15), location:"Bangalore" , title: "Insurance", price: 100 },
