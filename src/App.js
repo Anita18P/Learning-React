@@ -1,5 +1,5 @@
 import ExpenseItem from "./components/ExpenseItem";
-
+import Expenses from "./components/Expenses.js";
 function App() {
   const expenses = [
     { id: "1", date: new Date(2023, 7, 15), location:"Bangalore" , title: "Insurance", price: 100 },
@@ -11,17 +11,7 @@ function App() {
   return (
     <div>
       <h1>Let's get Started</h1>
-      {expenses.map((expense, index) => {
-        return (
-          <ExpenseItem
-            key={expense.id}
-            date={expense.date}
-            location={expense.location}
-            title={expense.title}
-            price={expense.price}
-          ></ExpenseItem>
-        );
-      })}
+      <Expenses expenses={expenses} />
     </div>
   );
 }

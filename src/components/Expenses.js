@@ -1,7 +1,8 @@
 import "./Expenses.css"
 import ExpenseItem from "./ExpenseItem.js"
-function Expenses({expenses}){
-  return (<div>
+import Card from "./Card.js";
+const Expenses =({expenses})=>{
+  return (<Card className="expenses">
   {expenses.map((expense, index) => {
         return (
             <ExpenseItem
@@ -12,7 +13,7 @@ function Expenses({expenses}){
           ></ExpenseItem>
         );
 })}
-</div>)
+</Card>)
 
 }
 
